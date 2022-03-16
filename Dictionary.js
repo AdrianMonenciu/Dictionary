@@ -7,7 +7,6 @@ function addWord() {
   } else {
     wordsArr.push(newWord)
   }
-  //alert(wordsArr[wordsArr.length - 1])
   document.getElementById("newWord").value = ''
 }
 
