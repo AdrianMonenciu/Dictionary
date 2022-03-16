@@ -1,3 +1,50 @@
+const cars = [];
+cars[0]= "Saab";
+cars[1]= "Volvo";
+cars[2]= "BMW";
+
+//const fruits = ["Banana", "Orange", "Apple"];
+//fruits.push("Lemon");  // Adds a new element (Lemon) to fruits
+
+
+//document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+
+
+//const ages = [3, 10, 18, 20];
+
+//function checkAge(age) {
+//  return age > 18;
+//}
+
+//function myFunction() {
+//  document.getElementById("demo").innerHTML = ages.find(checkAge);
+//}
+
+
+
+function addWord() {
+  //alert("test test")
+  var newWord = document.getElementById("newWord").value
+  alert(newWord)
+  cars.push(newWord)
+  alert(cars[3])
+}
+
+
+var searchedWord
+
+function searchWord() {
+  searchedWord = document.getElementById("searchedWord").value
+  alert(searchedWord)
+  //salert(cars.find(checkWord)
+  var found = cars.includes(searchedWord);
+  alert(found)
+}
+
+
+
+
 var randomNr
 function luckyButton(clicked_id) {
   if (clicked_id == randomNr) {

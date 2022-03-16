@@ -6,26 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Guess the button 1</title>
+    <title>Dictionary</title>
   </head>
   <body>
     <div class="container">
       <div class="card" style="width: 40rem;">
         <div class="card-body">
-          <h5 class="card-title">Guess the button 2</h5>
-          <p class="card-text">This application will add on the screen the number of buttons introduced by the user. One of the buttons is the winner and will be randomly picked. The application will display if the winning button was picked.</p>
-          <input type="text" id="buttonsNr"><br><br>
-          <button type="submit" class="btn btn-primary" id="submitButton" onclick="return addButtons()">Submit</button>
-          <button type="submit" class="btn btn-primary" id="restartButton" onclick="restartTheGame()">Restart</button>
+          <h5 class="card-title">Dictionary</h5>
+          <p class="card-text">Add words to dictionary or look for wirds already added.</p>
         </div>
       </div>
       <div class="card" style="width: 40rem;">
         <div class="card-body">
-          <div class="btn-group-vertical" role="group" aria-label="Basic outlined example" id="buttonsGroup">
-          </div>
+          <input type="text" id="newWord">
+          <button type="submit" class="btn btn-primary" id="submitButton" onclick="addWord()">Add word</button>
+        </div>
+      </div>
+      <div class="card" style="width: 40rem;">
+        <div class="card-body">
+          <input type="text" id="searchedWord">
+          <button type="submit" class="btn btn-primary" id="restartButton" onclick="searchWord()">Check word</button>
         </div>
       </div>
     </div> 
-    <script src="GuessTheButton_2.js"></script>
+    <script src="Dictionary.js"></script>
   </body>
 </html>
